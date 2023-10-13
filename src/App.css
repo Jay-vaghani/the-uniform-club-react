@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Fonts and background color routs */
+
+:root {
+  --primary-color-light-brown: #eeddcc;
+  --primary-color-dark-brown: #34251f;
+  --primary-color-brown: #413531;
+}
+
+.nav-link {
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: #34251f;
+  transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::after {
+  width: "100%";
+}

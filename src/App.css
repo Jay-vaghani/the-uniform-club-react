@@ -26,3 +26,8 @@
 .nav-link:hover::after {
   width: "100%";
 }
+
+.hero-page-image{
+  width: 100%;
+  border-radius: 0 0 0 20%;
+}

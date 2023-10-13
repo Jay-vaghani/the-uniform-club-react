@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
+import HeroPageImage from "../../assets/images/HeroPage/hero-page.jpeg";
 
 function Home() {
   const h1ResponsiveFontSize = {
@@ -19,8 +20,16 @@ function Home() {
   };
 
   return (
-    <Box bgcolor={"primary.main"}>
-      <Grid container px={1}>
+    <Box bgcolor={"primary.main"} pb={4}>
+      <Grid
+        container
+        px={{
+          xs: 2,
+          md: 6,
+        }}
+        mt={0}
+        spacing={4}
+      >
         <Grid item xs={12} md={6}>
           <Typography
             variant="h1"
@@ -43,6 +52,9 @@ function Home() {
             professional, a chef, or in any other profession that requires
             specialized attire.
           </Typography>
+        </Grid>
+        <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}>
+          <img src={HeroPageImage} className="hero-page-image" alt="" />
         </Grid>
       </Grid>
     </Box>

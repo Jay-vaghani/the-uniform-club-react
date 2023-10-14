@@ -12,6 +12,8 @@ import {
   SwitchAccount,
   LocalMall,
   PermPhoneMsgRounded,
+  WhatsApp,
+  CallRounded,
 } from "@mui/icons-material";
 import Button from "@mui/material/Button";
 
@@ -55,7 +57,7 @@ function MobileMenu() {
         transitionDuration={{ enter: 700, exit: 700 }}
       >
         <Box
-          py={1.5}
+          py={2.1}
           pl={1.3}
           boxShadow={"0px 2px 25px 0px #e2e2e254"}
           display={"flex"}
@@ -80,31 +82,17 @@ function MobileMenu() {
             drawerFunction={drawerFunction}
             icon={<Home fontSize="medium" sx={{ color: "secondary.main" }} />}
           />
+
           <ListItemButtonNav
-            link={"/"}
-            name="Freshline"
-            drawerFunction={drawerFunction}
-            icon={<SwitchAccount fontSize="medium" sx={{ color: "secondary.main" }} />}
-          />
-          <ListItemButtonNav
-            link={"/"}
-            name="About"
-            drawerFunction={drawerFunction}
-            icon={<Person fontSize="medium" sx={{ color: "secondary.main" }} />}
-          />
-          <ListItemButtonNav
-            link={"/"}
+            link={"/products"}
             name="Product"
             drawerFunction={drawerFunction}
             icon={
-              <LocalMall
-                fontSize="medium"
-                sx={{ color: "secondary.main" }}
-              />
+              <LocalMall fontSize="medium" sx={{ color: "secondary.main" }} />
             }
           />
           <ListItemButtonNav
-            link={"/"}
+            link={"/contact"}
             name="Contact"
             drawerFunction={drawerFunction}
             icon={
@@ -114,6 +102,18 @@ function MobileMenu() {
               />
             }
           />
+          <ListItemButton href="https://wa.me/7984632774" target="_blank">
+            <ListItemIcon>
+              <WhatsApp />
+            </ListItemIcon>
+            <Typography variant="h6">Whats App</Typography>
+          </ListItemButton>
+          <ListItemButton href="tel:7984632774">
+            <ListItemIcon>
+              <CallRounded />
+            </ListItemIcon>
+            <Typography variant="h6">Call Me</Typography>
+          </ListItemButton>
         </List>
       </SwipeableDrawer>
     </>

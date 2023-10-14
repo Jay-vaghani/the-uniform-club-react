@@ -20,14 +20,31 @@
   height: 3px;
   background-color: #34251f;
   transition: 0.3s ease-in-out;
-
 }
 
 .nav-link:hover::after {
   width: "100%";
 }
 
-.hero-page-image{
-  width: 100%;
+.image-border-radius-left-bottom {
   border-radius: 0 0 0 20%;
+}
+
+
+
+.image-border-radius-right-bottom {
+  border-radius: 0 0 20% 0;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

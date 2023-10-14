@@ -3,6 +3,8 @@ import React from "react";
 import MobileMenu from "./MobileMenu";
 import { NavLink } from "react-router-dom";
 import logo from "../../../assets/logo.svg";
+import CallBtn from "../Utils/CallBtn";
+import WhatsAppBtn from "../Utils/WhatsAppBtn";
 
 function NavBar() {
   const navLinkAnimationObj = {
@@ -27,8 +29,16 @@ function NavBar() {
   return (
     <>
       <Box
+        mx={"auto"}
+        maxWidth={{
+          xs: "100%",
+          lg: "1200px",
+        }}
         py={1}
-        px={1}
+        px={{
+          xs: 2,
+          md: 6,
+        }}
         display={"flex"}
         justifyContent={"space-between"}
         alignItems={"center"}
@@ -45,7 +55,7 @@ function NavBar() {
           fontSize={26}
           color={"secondary.main"}
         >
-          <img src={logo} width={"80px"} alt="" />
+          <img src={logo} width={"70px"} alt="" />
         </Typography>
         <Box
           width={"60%"}
@@ -74,27 +84,8 @@ function NavBar() {
               Home
             </Typography>
           </NavLink>
-          <NavLink to={"/"} style={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
-              sx={navLinkAnimationObj}
-              fontWeight={600}
-              color={"secondary.main"}
-            >
-              Freshline
-            </Typography>
-          </NavLink>
-          <NavLink to={"/"} style={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
-              sx={navLinkAnimationObj}
-              fontWeight={600}
-              color={"secondary.main"}
-            >
-              About
-            </Typography>
-          </NavLink>
-          <NavLink to={"/"} style={{ textDecoration: "none" }}>
+
+          <NavLink to={"/products"} style={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               sx={navLinkAnimationObj}
@@ -104,7 +95,7 @@ function NavBar() {
               Products
             </Typography>
           </NavLink>
-          <NavLink to={"/"} style={{ textDecoration: "none" }}>
+          <NavLink to={"/contact"} style={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               sx={navLinkAnimationObj}

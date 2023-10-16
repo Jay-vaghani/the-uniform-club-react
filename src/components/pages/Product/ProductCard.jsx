@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import React from "react";
 
-function ProductCard({image, title}) {
+function ProductCard({ image, title }) {
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
       <Card
@@ -52,13 +52,6 @@ function ProductCard({image, title}) {
                 startIcon={<CallRounded />}
               >
                 Call&nbsp;TO&nbsp;Buy
-              </Button>
-              <Button
-                variant="contained"
-                disableElevation
-                endIcon={<KeyboardDoubleArrowRight />}
-              >
-                view
               </Button>
             </Stack>
           </CardActions>

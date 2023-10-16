@@ -1,3 +1,4 @@
+import { initializeGA } from "react-analytics";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/pages/Home/Home";
 import "./App.css";
@@ -7,6 +8,8 @@ import Contact from "./components/pages/Contact.jsx";
 import Product from "./components/pages/Product/Product";
 
 function App() {
+  initializeGA(import.meta.env.VITE_MEASUREMENT_ID);
+
   const theme = createTheme({
     palette: {
       primary: {

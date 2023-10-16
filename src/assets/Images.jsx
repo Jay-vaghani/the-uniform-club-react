@@ -9,3 +9,11 @@ export { default as industrialUniform } from "./images/industrial_uniform/indust
 export { default as SecurityUniforms } from "./images/Security_uniforms/Security_uniforms_1.jpg";
 
 // ===================== For Product Page =====================
+
+// ========== Security Uniform Images ==========
+
+export { default as SecurityUniforms1 } from "./images/ProductImage/SecurityUniformImage/Security_uniforms_1.jpeg";
+
+// ========== Hospital Uniform Images ==========
+
+export { default as hospitalUniform1 } from "./images/ProductImage/HospitalUniformImage/HospitalUniformImage.jpeg";

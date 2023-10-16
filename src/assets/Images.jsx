@@ -16,4 +16,20 @@ export { default as SecurityUniforms1 } from "./images/ProductImage/SecurityUnif
 
 // ========== Hospital Uniform Images ==========
 
-export { default as hospitalUniform1 } from "./images/ProductImage/HospitalUniformImage/HospitalUniformImage.jpeg";
+export { default as hospitalUniform1 } from "./images/ProductImage/HospitalUniformImage/HospitalUniformImage1.jpeg";
+
+// ========== Corporate uniform Images ==========
+
+export { default as corporateUniform1 } from "./images/ProductImage/CorporateUniformImage/CorporateUniform1.png";
+
+// ========== Hotel Restaurant Uniform Images ==========
+
+export { default as hotelRestaurantUniform1 } from "./images/ProductImage/HotelRestaurantUniformImage/HotelRestaurantUniformImage1.jpeg";
+
+// ========== Housekeeping Uniforms Images ==========
+
+export { default as housekeepingUniforms1 } from "./images/ProductImage/HousekeepingUniformsImage/housekeepingUniforms1.jpeg";
+
+// ========== Industrial Uniform Images ==========
+
+export { default as industrialUniform1 } from "./images/ProductImage/IndustrialUniformImage/industrialUniform1.jpeg";

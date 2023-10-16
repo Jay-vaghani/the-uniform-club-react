@@ -3,17 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scrollbar-width: 5px;
 }
 
 /* Style the scrollbar track */
 ::-webkit-scrollbar {
-  width: 10px; /* Set the width of the scrollbar */
+  width: 0; /* Set the width of the scrollbar */
 }
 
 /* Style the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
   background: #34251f; /* Change the color of the scrollbar thumb */
-  border-radius: 5px; /* Add rounded corners to the thumb */
+  border-radius: 0px; /* Add rounded corners to the thumb */
 }
 
 /* Style the scrollbar track (the area behind the thumb) */
@@ -21,12 +22,14 @@
   background: #f1f1f1; /* Change the color of the scrollbar track */
 }
 
-.element-with-scroll {
+/* Hide the scrollbar but enable scrolling */
+.container {
   overflow: auto;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent; 
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Microsoft Edge */
 
-
+  /* WebKit-based browsers (like Chrome and Safari) */
   &::-webkit-scrollbar {
     width: 0.1rem;
   }
@@ -38,5 +41,4 @@
   &::-webkit-scrollbar-track {
     background: transparent;
   }
-  cursor: grab;
 }

@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import React from "react";
 
-function ProductCard({image}) {
+function ProductCard({image, title}) {
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
       <Card
@@ -36,7 +36,7 @@ function ProductCard({image}) {
         </CardMedia>
         <CardContent>
           <Typography gutterBottom variant="subtitle1" fontWeight={"500"}>
-            Security Uniform
+            {title}
           </Typography>
 
           <CardActions

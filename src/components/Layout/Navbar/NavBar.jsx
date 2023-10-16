@@ -3,8 +3,8 @@ import React from "react";
 import MobileMenu from "./MobileMenu";
 import { NavLink } from "react-router-dom";
 import logo from "../../../assets/logo.svg";
-import CallBtn from "../Utils/CallBtn";
-import WhatsAppBtn from "../Utils/WhatsAppBtn";
+import CallBtn from "../../Utils/CallBtn";
+import WhatsAppBtn from "../../Utils/WhatsAppBtn";
 
 function NavBar() {
   const navLinkAnimationObj = {

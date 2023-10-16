@@ -9,8 +9,8 @@ import {
   TShirt,
   industrialUniform,
 } from "../../../assets/Images";
-import ProductBtn from "../../Layout/Utils/ProductBtn";
-import CallBtn from "../../Layout/Utils/CallBtn";
+import ProductBtn from "../../Utils/ProductBtn";
+import CallBtn from "../../Utils/CallBtn";
 import ProductSection from "./ProductSection";
 
 function Section3() {

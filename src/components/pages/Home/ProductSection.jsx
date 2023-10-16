@@ -1,7 +1,7 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-import CallBtn from "../../Layout/Utils/CallBtn";
-import ProductBtn from "../../Layout/Utils/ProductBtn";
+import CallBtn from "../../Utils/CallBtn";
+import ProductBtn from "../../Utils/ProductBtn";
 
 function ProductSection({ image, infoRight, title, p1, p2, p3 }) {
   const h4ResponsiveFontSize = {

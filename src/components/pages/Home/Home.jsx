@@ -3,8 +3,9 @@ import React from "react";
 import HeroPageImage from "../../../assets/images/HeroPage/hero-page.jpeg";
 import Section2 from "./Section2";
 import Section3 from "./Section3";
-import WhatsAppBtn from "../../Layout/Utils/WhatsAppBtn";
-import CallBtn from "../../Layout/Utils/CallBtn";
+import WhatsAppBtn from "../../Utils/WhatsAppBtn";
+import CallBtn from "../../Utils/CallBtn";
+import Loading from "../../Utils/Loading";
 
 function Home() {
   const h1ResponsiveFontSize = {

@@ -1,10 +1,12 @@
+import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/pages/Home/Home";
 import "./App.css";
 import NavBar from "./components/Layout/Navbar/NavBar.jsx";
 import { Box, ThemeProvider, createTheme } from "@mui/material";
-import Contact from "./components/pages/Contact.jsx";
-import Product from "./components/pages/Product/Product";
+import Loading from "./components/Utils/Loading";
+const Home = lazy(() => import("./components/pages/Home/Home"));
+const Product = lazy(() => import("./components/pages/Product/Product"));
+const Contact = lazy(() => import("./components/pages/Contact.jsx"));
 
 function App() {
   const theme = createTheme({
@@ -22,9 +24,30 @@ function App() {
     <ThemeProvider theme={theme}>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Product />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Product />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Suspense fallback={<Loading />}>
+              <Contact />
+            </Suspense>
+          }
+        />
       </Routes>
     </ThemeProvider>
   );

@@ -8,6 +8,13 @@
   --primary-color-brown: #413531;
 }
 
+.smooth-shadow {
+  box-shadow: 0px 0px 13px rgb(245 245 245);
+}
+.smooth-shadow-card {
+  box-shadow: -3px 3px 10px rgb(245 245 245);
+}
+
 .nav-link {
 }
 
@@ -30,12 +37,9 @@
   border-radius: 0 0 0 20%;
 }
 
-
-
 .image-border-radius-right-bottom {
   border-radius: 0 0 20% 0;
 }
-
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

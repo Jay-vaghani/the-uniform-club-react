@@ -61,6 +61,7 @@ function Section3() {
           the workplace."
           p3="Explore our diverse collection today, and experience the difference of
           working with a team dedicated to your success."
+          link={"/products/corporate-uniform"}
         />
         <ProductSection
           image={HospitalUniform}
@@ -74,7 +75,9 @@ function Section3() {
           the workplace."
           p3="Explore our diverse collection today, and experience the difference of
           working with a team dedicated to your success."
-        />
+          link={"/products/hospital-uniform"}
+          
+          />
         <ProductSection
           image={SecurityUniforms}
           infoRight={false}
@@ -87,7 +90,9 @@ function Section3() {
           the workplace."
           p3="Explore our diverse collection today, and experience the difference of
           working with a team dedicated to your success."
-        />
+          link={"/products/security-uniforms"}
+          
+          />
         <ProductSection
           image={HousekeepingUniforms}
           infoRight={true}
@@ -100,7 +105,8 @@ function Section3() {
           the workplace."
           p3="Explore our diverse collection today, and experience the difference of
           working with a team dedicated to your success."
-        />
+          link={"/products/housekeeping-uniforms"}
+          />
         <ProductSection
           image={HotelRestaurantUniform}
           infoRight={false}
@@ -113,7 +119,8 @@ function Section3() {
           the workplace."
           p3="Explore our diverse collection today, and experience the difference of
           working with a team dedicated to your success."
-        />
+          link={"/products/hotel-restaurant-uniform"}
+          />
         <ProductSection
           image={industrialUniform}
           infoRight={true}
@@ -126,7 +133,8 @@ function Section3() {
           the workplace."
           p3="Explore our diverse collection today, and experience the difference of
           working with a team dedicated to your success."
-        />
+          link={"/products/industrial-uniform"}
+          />
         <ProductSection
           image={TShirt}
           infoRight={false}
@@ -139,6 +147,7 @@ function Section3() {
           the workplace."
           p3="Explore our diverse collection today, and experience the difference of
           working with a team dedicated to your success."
+          link={"/products/t-shirts"}
         />
       </Stack>
     </Box>

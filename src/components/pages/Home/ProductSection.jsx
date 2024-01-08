@@ -3,7 +3,7 @@ import React from "react";
 import CallBtn from "../../Utils/CallBtn";
 import ProductBtn from "../../Utils/ProductBtn";
 
-function ProductSection({ image, infoRight, title, p1, p2, p3 }) {
+function ProductSection({ image, infoRight, title, p1, p2, p3, link }) {
   const h4ResponsiveFontSize = {
     xs: "1.7rem",
     sm: "1.8rem",
@@ -55,7 +55,7 @@ function ProductSection({ image, infoRight, title, p1, p2, p3 }) {
           </Typography>
           <Stack direction={"row"} spacing={2} mt={3}>
             <CallBtn />
-            <ProductBtn />
+            <ProductBtn link={link} />
           </Stack>
         </Grid>
       </Grid>

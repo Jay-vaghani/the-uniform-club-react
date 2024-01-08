@@ -85,7 +85,7 @@ function NavBar() {
             </Typography>
           </NavLink>
 
-          <NavLink to={"/products"} style={{ textDecoration: "none" }}>
+          <NavLink to={"/products/corporate-uniform"} style={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               sx={navLinkAnimationObj}

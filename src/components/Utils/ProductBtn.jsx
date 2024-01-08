@@ -3,7 +3,7 @@ import { Box, Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ProductBtn() {
+function ProductBtn({ link }) {
   let navigation = useNavigate();
 
   return (
@@ -13,7 +13,7 @@ function ProductBtn() {
         variant="contained"
         color="secondary"
         endIcon={<KeyboardDoubleArrowRight />}
-        onClick={() => navigation("/products")}
+        onClick={() => navigation(link)}
       >
         See More
       </Button>

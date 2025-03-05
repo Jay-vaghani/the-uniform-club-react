@@ -32,6 +32,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: 46.202.161.146
-          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          username: u474837529
+          password: Vaghanijay9033611999@
           local-dir: dist/

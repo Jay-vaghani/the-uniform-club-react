@@ -31,7 +31,7 @@ jobs:
       - name: Deploy to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ftp://46.202.161.146
+          server: 46.202.161.146
           username: u474837529
           password: Vaghanijay9033611999@
           local-dir: dist/

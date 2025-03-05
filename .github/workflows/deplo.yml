@@ -35,3 +35,4 @@ jobs:
           username: u474837529
           password: Vaghanijay9033611999@
           local-dir: dist/
+          server-dir: public_html/
